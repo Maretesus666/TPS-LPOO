@@ -5,7 +5,18 @@ funciones. */
 
 void encontrarMayorYMenor(int *arr, int size, int *mayor, int *menor) {
     *mayor = *arr;
-    *menor = *ar
+    *menor = *arr; 
+
+    for (int i = 1; i < size; i++) {
+        if (*(arr + i) > *mayor) {
+            *mayor = *(arr + i); 
+        }
+        if (*(arr + i) < *menor) {
+            *menor = *(arr + i);
+        }
+    }
+}
+
 int main() {
     int arreglo[] = {1, 2, 3, 4, 5}; 
     int size = sizeof(arreglo) / sizeof(arreglo[0]); 
