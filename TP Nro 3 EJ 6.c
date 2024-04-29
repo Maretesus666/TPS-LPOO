@@ -6,6 +6,11 @@ puntero y funciones */
 int contarOcurrencias(int *arr, int size, int elemento) {
     int contador = 0;
 
+    for (int i = 0; i < size; i++) {
+        if (*(arr + i) == elemento) {
+            contador++; 
+        }
+    }
 
     return contador;
 }
