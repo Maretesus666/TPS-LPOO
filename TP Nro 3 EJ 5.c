@@ -8,15 +8,6 @@ void concatenarCadenas(char *cadena1, char *cadena2, char *resultado) {
         *resultado = *cadena1; 
         cadena1++;
         resultado++;
-    }
-
-    while (*cadena2) {
-        *resultado = *cadena2;
-        cadena2++;
-        resultado++;
-    }
-
-    *resultado = '\0'; 
 }
 
 int main() {
